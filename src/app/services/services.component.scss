@@ -1,0 +1,179 @@
+@import "../styles.scss";
+
+.exclusive{
+  width: 50%;
+  height: 30px;
+  font-size: 10px;
+  background-color: $red;
+  font-family: $f-reg;
+  letter-spacing: 1.52px;
+  line-height: 10px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.card{
+  margin-bottom: 10px;
+  height: auto;
+  border: 1px solid $blue-light;
+  background-color: white;
+  position: relative;
+  h1{
+    font-family: $fs-reg;
+    font-size: 20px;
+    font-weight: bold;
+    color: $blue-light;
+    text-align: center;
+    margin-top: 40px;
+    span{
+      font-family: $f-reg;
+      font-size: 10px;
+      color: $blue-dark;
+    }
+    button{
+      background-color: white;
+      border: none;
+    }
+  }
+}
+
+.arrow{
+  transition: transform .2s linear;
+  &.arrow--up{
+    transform: rotate(180deg);
+  }
+}
+
+.service-card{
+  background-color: $grey-light;
+  width: 98%;
+  margin: auto;
+  border: 1px solid $blue-light;
+  margin-bottom: 10px;
+  img{
+    width: 100%;
+  }
+  h2{
+    font-size: 16px;
+    font-family: $fs-reg;
+    font-weight: bold;
+    color: $blue-dark;
+    margin-left: 5%
+  }
+  p{
+    font-size: 12px;
+    margin: 10px 5%;
+    color: $grey-dark;
+  }
+
+  span{
+    margin-left: 5%;
+    margin-bottom: 20px;
+    color: $blue-light;
+    font-family: $f-reg;
+    font-weight: bold;
+    font-size: 14px;
+    button{
+      background-color: $grey-light;
+      border: none;
+      img{
+        width: 14px;
+      }
+    }
+  }
+}
+.more-info{
+  transition: all .4s linear;
+  margin-top: 10px;
+  span{
+    font-family: $f-reg;
+    color: $grey-dark;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  ul li{
+    font-family: $f-reg;
+    color: $grey-dark;
+    font-size: 12px;
+    margin-top: 0px;
+    margin-left:-10px;
+  }
+  p{
+    font-family: $f-reg;
+    font-size: 12px;
+    color: $blue-dark;
+    font-weight: bold;
+  }
+}
+.clearfix{
+  clear: both;
+}
+
+@media screen and (min-width: $tablet) {
+  .exclusive{
+    width: 25%;
+  }
+  .card{
+    clear: both;
+    h1{
+      text-align: left;
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+  }
+  .content{
+    clear: both;
+  }
+  .service-card{
+    img{
+      float: left;
+      width: 30%;
+    }
+    .text-content{
+      h2{
+        margin-top: 4px;
+        margin-bottom: 4px;
+      }
+      float: left;
+      width: 70%;
+      p{
+        margin-top: 0px;
+        margin-bottom: 4px;
+      }
+    }
+  }
+  .more-info{
+    margin-top: 100px;
+    span{
+      margin-left: 20px;
+    }
+  }
+
+}
+
+
+@media screen and (min-width: $desktop) {
+  .exclusive{
+    width: 20%;
+  }
+  .more-info{
+    margin-top: 200px;
+    span{
+      margin-left: 20px;
+    }
+  }
+}
+
+
+@media screen and (min-width: $medium-desktop) {
+  .service-card{
+    .text-content{
+      p{
+        font-size: 14px;
+      }
+    }
+  }
+}

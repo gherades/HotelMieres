@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700');
+
+// Typography
+$f-reg: 'Roboto', sans-serif;
+$fs-reg: 'Roboto Slab', serif;
+
+//Colors
+
+$blue-light: #4BA7EE;
+$blue-medium: #105AA3;
+$blue-dark: #033970;
+$grey-light: #fafafa;
+$grey-medium: #9DA2A9;
+$grey-dark: #616469;
+$red: #E82E34;
+$green: #6DC138;
+$border:#DEE1E8;
+
+//MediaQUeries
+$tablet: 767px;
+$desktop: 1023px;
+$medium-desktop: 1264px;
+
+
+a {
+  text-decoration: none;
+}

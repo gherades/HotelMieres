@@ -1,0 +1,96 @@
+<div class="container">
+  <h1>HOTEL <span>Mieres del Camín Apartamentos</span>
+    <img class="star" src="../assets/star-orange.svg" alt="">
+    <img class="star" src="../assets/star-orange.svg" alt="">
+    <img class="star" src="../assets/star-orange.svg" alt="">
+    <img class="star" src="../assets/star-orange.svg" alt="">
+  </h1>
+  <div class="content">
+    <div class="card">
+      <h1>Solo alojamiento</h1>
+      <hr class="margin-top">
+      <ul>
+        <li>Sin régimen</li>
+        <li>Botella de agua de bienvenida</li>
+      </ul>
+      <div class="box">
+        <input type="radio" id="accommodation-only" name="selected-fare">
+        <label for="accommodation-only">Elegir régimen</label>
+        <div class="check"></div>
+      </div>
+    </div>
+    <div class="card">
+        <h1>Alojamiento y desayuno</h1>
+        <hr class="margin-top">
+        <ul>
+          <li>Desayuno buffet completo</li>
+        </ul>
+        <div class="box">
+          <input type="radio" id="bed-breakfast" name="selected-fare">
+          <label for="bed-breakfast">Elegir régimen</label>
+          <div class="check"></div>
+        </div>
+      </div>
+      <div class="card">
+          <h1>Media pensión</h1>
+          <hr class="margin-top">
+          <ul>
+            <li>Desayuno buffet completo</li>
+            <li>Cena buffet</li>
+            <li>No incluye</li>
+          </ul>
+          <div class="box">
+            <input type="radio" id="half-pension" name="selected-fare">
+            <label for="half-pension">Elegir régimen</label>
+            <div class="check"></div>
+          </div>
+        </div>
+        <div class="card">
+            <h1>Todo incluido</h1>
+            <hr class="margin-top">
+            <ul>
+              <li>Dispondrás de comida y bebida todo el día y durante toda tu estancia</li>
+              <li>Restaurante buffet</li>
+              <li>Snack Bar</li>
+              <li>Servicio de bares (marcas nacionales)</li>
+            </ul>
+            <button (click)="selectedFare = 'all-include'">
+                <input type="radio" [checked]="selectedFare === 'all-include'">
+                <label for="unlimite-services">Elegir régimen</label>
+                <div class="check"></div>
+            </button>
+            <div class="box">
+              <input type="radio" id="all-include" name="selected-fare">
+              <label for="all-include">Elegir régimen</label>
+              <div class="check"></div>
+            </div>
+          </div>
+          <div class="card">
+              <h1>Unlimite Services</h1>
+              <hr class="margin-top">
+              <ul>
+                <li>Restaurante buffet con bebidas Premium</li>
+                <li>Restaurante a la carta (una cena por estancia)</li>
+                <li>Snack Bar con bebidas Premium</li>
+                <li>Minibar incluido</li>
+                <li>Acceso a SPA y 45 minutos de masaje por persona</li>
+                <li>Actividades deportivas (acuáticas sin motor)</li>
+                <li>Caja fuerte</li>
+                <li>Parking gratuito</li>
+                <li>Lavandería</li>
+              </ul>
+              <button (click)="selectedFare = 'unlimited'" [ngClass]="{'selected': selectedFare === 'unlimited'}">
+                  <input type="radio" [checked]="selectedFare === 'unlimited'">
+                  <label for="unlimite-services">Elegir régimen</label>
+                  <div class="check"></div>
+              </button>
+
+              <div class="box">
+                <input type="radio" id="unlimite-services" name="selected-fare">
+                <label for="unlimite-services">Elegir régimen</label>
+                <div class="check"></div>
+              </div>
+            </div>
+
+  </div>
+  </div>

@@ -1,0 +1,61 @@
+<div class="card">
+  <div class="exclusive">
+    <p>EXCLUSIVO HOTELES.COM</p>
+  </div>
+  <h1>
+    <button (click)="show()">
+      <img class="arrow" [ngClass]="{'arrow--up': arrow}" src="../../assets/angle-down-blue.svg">
+    </button>
+    Mejora tu estancia <span>Opcional</span>
+  </h1>
+  <div class="content" *ngIf="showService">
+    <div class="service-card">
+      <img src="assets/yoga.png" alt="">
+      <div class="text-content">
+        <h2>Olvídese de la rutina</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime labore voluptatum tempora maiores ratione, facilis consectetur voluptate voluptas saepe expedita dolorum optio.</p>
+        <span>Más información y condiciones <button><img class="arrow" src="../../assets/angle-down-blue.svg"></button></span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  <div class="content" *ngIf="showService">
+      <div class="service-card">
+        <img src="../../assets/spa.png" alt="">
+        <div class="text-content">
+          <h2>Experiencias y programas SPA con agua</h2>
+          <p>Las experiencias spa de agua tienen una presencia muy especial en SPA sensations. No es extraño si consideramos que la mayor parte del planeta, así como del propio cuerpo humano, están compuestos de agua.
+            <br>El arte de recrear experiencias de agua en variaciones ilimitadas es la base de la propuesta de SPA Sensations a sus clientes, aportando el refinamiento al baño y a la hidratación de todas sus formas. Un mundo mágico de posibilidades, más allá de la terapia y del que ahora usted, también podrá disfrutar.
+          </p>
+          <span>Más información y condiciones <button (click)="showMore()"><img [ngClass]="{'arrow--up': arrowUp}" class="arrow" src="../../assets/angle-down-blue.svg"></button></span>
+        </div>
+          <div *ngIf="showInfo" class="more-info">
+          <span>Incluye</span>
+          <ul>
+            <li>Baño javanés Mani Susu tradicional: evocación de los baños que tomaban las princesas de las cortes y palacios de Java Central, en Indonesia, con antiguas recetas en las que se mezclaba la leche y las especias.</li>
+            <li>Baño floral balinés: con aceite de almendra dulce y aromas de jazmín.</li>
+            <li>Baño oceánico: con sal marina y gajos de mandarina o lima.</li>
+            <li>Baño de pies floral: baño aromático de pies, con pétalos y aromas.</li>
+            <li>Baño de vapor herbal: baño de vapor con hierbas del sudeste asiático.</li>
+            <li>Rain shower.</li>
+          </ul>
+          <p>Valores no acumulables a otras promociones similares</p>
+        </div>
+      <div class="clearfix"></div>
+
+      </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+<div class="card">
+    <div class="exclusive">
+      <p>EXCLUSIVO HOTELES.COM</p>
+    </div>
+    <h1>
+      <button>
+        <img class="arrow" src="../../assets/angle-down-blue.svg">
+      </button>
+      Servicios de habitación <span>Opcional</span>
+    </h1>
+  </div>
