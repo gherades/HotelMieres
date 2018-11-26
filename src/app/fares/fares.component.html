@@ -54,11 +54,6 @@
               <li>Snack Bar</li>
               <li>Servicio de bares (marcas nacionales)</li>
             </ul>
-            <button (click)="selectedFare = 'all-include'">
-                <input type="radio" [checked]="selectedFare === 'all-include'">
-                <label for="unlimite-services">Elegir régimen</label>
-                <div class="check"></div>
-            </button>
             <div class="box">
               <input type="radio" id="all-include" name="selected-fare">
               <label for="all-include">Elegir régimen</label>
@@ -79,12 +74,6 @@
                 <li>Parking gratuito</li>
                 <li>Lavandería</li>
               </ul>
-              <button (click)="selectedFare = 'unlimited'" [ngClass]="{'selected': selectedFare === 'unlimited'}">
-                  <input type="radio" [checked]="selectedFare === 'unlimited'">
-                  <label for="unlimite-services">Elegir régimen</label>
-                  <div class="check"></div>
-              </button>
-
               <div class="box">
                 <input type="radio" id="unlimite-services" name="selected-fare">
                 <label for="unlimite-services">Elegir régimen</label>

@@ -1,4 +1,4 @@
-@import "../styles.scss";
+@import "../theme.scss";
 
 :host{
   width: 100%;
@@ -51,6 +51,7 @@
     font-weight: bold;
     color: $blue-dark;
     text-align: center;
+    height: 20px;
   }
   hr {
     height: 1px;

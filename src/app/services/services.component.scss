@@ -1,4 +1,4 @@
-@import "../styles.scss";
+@import "../theme.scss";
 
 .exclusive{
   width: 50%;
@@ -16,6 +16,7 @@
 }
 
 .card{
+  margin-top: 20px;
   margin-bottom: 10px;
   height: auto;
   border: 1px solid $blue-light;
@@ -146,12 +147,21 @@
     }
   }
   .more-info{
-    margin-top: 100px;
+    margin-top: 180px;
+    p{
+      margin-left: 20px;
+    }
     span{
       margin-left: 20px;
     }
   }
 
+}
+
+@media screen and (min-width: 940px) {
+  .more-info{
+    margin-top: 200px;
+  }
 }
 
 
@@ -160,7 +170,7 @@
     width: 20%;
   }
   .more-info{
-    margin-top: 200px;
+    margin-top: 240px;
     span{
       margin-left: 20px;
     }
@@ -175,5 +185,8 @@
         font-size: 14px;
       }
     }
+  }
+  .more-info{
+    margin-top: 280px;
   }
 }

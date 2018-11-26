@@ -5,7 +5,7 @@ import { ServicesComponent } from './services/services.component';
 const routes: Routes = [
   {path: '', redirectTo: 'fares', pathMatch: 'full'},
   {path: 'fares', loadChildren: './fares/fares.module#FaresModule'},
-  {path: 'services', component: ServicesComponent}
+  {path: 'services', loadChildren: './services/services.module#ServicesModule'}
 
 ];
 
