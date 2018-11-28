@@ -74,8 +74,8 @@
                 <li>Parking gratuito</li>
                 <li>Lavandería</li>
               </ul>
-              <div class="box">
-                <input type="radio" id="unlimite-services" name="selected-fare">
+              <div class="box" [ngClass]="{'active': checked}">
+                <input (click)="option()" type="radio" id="unlimite-services" name="selected-fare">
                 <label for="unlimite-services">Elegir régimen</label>
                 <div class="check"></div>
               </div>

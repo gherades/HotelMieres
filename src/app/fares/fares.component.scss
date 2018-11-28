@@ -131,6 +131,10 @@
   border:1px solid $blue-dark;
 }
 
+.active{
+  border:1px solid $blue-dark;
+}
+
 @media screen and (min-width: $tablet) {
 .content{
   overflow: hidden;

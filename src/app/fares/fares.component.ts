@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fares.component.scss']
 })
 export class FaresComponent implements OnInit {
-  selectedFare: string;
   constructor() { }
 
   ngOnInit() {
